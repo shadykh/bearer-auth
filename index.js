@@ -3,12 +3,17 @@
 // Start up DB Server
 require('dotenv').config();
 const mongoose = require('mongoose');
-
+const options = {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+};
 
 // Start the web server
+
+
 mongoose
-  .connect(process.env.MONGOOSE_URI,
-    { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(process.env.MONGOOSE_URI, options)
   .then(() => {
     require('./src/server.js').start(process.env.PORT);
   })

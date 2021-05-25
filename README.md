@@ -127,12 +127,7 @@ Implement any 2 of these security measures, or any other measure that you can th
 
   - For the repo ***bearer-auth*** clicks => [here](https://github.com/shadykh/bearer-auth).
   - Pull Requests:
-    - [https://github.com/shadykh/bearer-auth/pull/2](https://github.com/shadykh/bearer-auth/pull/2)
-    - [https://github.com/shadykh/bearer-auth/pull/3](https://github.com/shadykh/bearer-auth/pull/3)
-  - Actions:
-    - [https://github.com/shadykh/bearer-auth/runs/2652012601?check_suite_focus=true](https://github.com/shadykh/bearer-auth/runs/2652012601?check_suite_focus=true)
-    - [https://github.com/shadykh/bearer-auth/runs/2652014216?check_suite_focus=true](https://github.com/shadykh/bearer-auth/runs/2652014216?check_suite_focus=true)
-    - [https://github.com/shadykh/bearer-auth/runs/2652014428?check_suite_focus=true](https://github.com/shadykh/bearer-auth/runs/2652014428?check_suite_focus=true)
+    - [https://github.com/shadykh/bearer-auth/pull/5](https://github.com/shadykh/bearer-auth/pull/2)
   - Local Tests:
     - ![Local Test Image1](https://raw.githubusercontent.com/shadykh/bearer-auth/main/assets/localTest1.PNG)
     - ![Local Test Image2](https://raw.githubusercontent.com/shadykh/bearer-auth/main/assets/localTest2.PNG)
@@ -200,9 +195,9 @@ Implement any 2 of these security measures, or any other measure that you can th
 - #### Tests
 
   - run `npm test`
-  - Auth Middleware ➡️ [bearer-auth-middleware.test.js](./__tests__/bearer-auth-middleware.test.js)
-  - Auth Router ➡️ [router.test.js](./__tests__/router.test.js)
-  - Auth Middleware ➡️ [basic-auth-middleware.test.js](./__tests__/basic-auth-middleware.test.js)
+  - Auth Middleware ➡️ [bearer-auth-middleware.test.js](./__tests__/src/auth/bearer-auth-middleware.test.js)
+  - Auth Router ➡️ [router.test.js](./__tests__/src/auth/router.test.js)
+  - Auth Middleware ➡️ [basic-auth-middleware.test.js](./__tests__/src/auth/basic-auth-middleware.test.js)
 
 - #### App
 
