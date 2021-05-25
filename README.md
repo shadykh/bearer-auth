@@ -236,17 +236,22 @@ Implement any 2 of these security measures, or any other measure that you can th
 
 #### Notes
 
-- Securing Passwords
-  - Passwords are the first line of defense against cyber criminals. It is the most vital secret of every activity we do over the internet and also a final check to get into any of your user account, whether it is your bank account, email account, shopping cart account or any other account you have.
-  - Cryptographic hash algorithms MD5, SHA1, SHA256, SHA512, SHA-3 are general purpose hash functions, designed to calculate a digest of huge amounts of data in as short a time as possible. Hashing is the greatest way for protecting passwords and considered to be pretty safe for ensuring the integrity of data or password.
-  - > For further information clicks =>[here](https://thehackernews.com/2014/04/securing-passwords-with-bcrypt-hashing.html)
-- Basic Auth
-  - In the context of an HTTP transaction, basic access authentication is a method for an HTTP user agent (e.g. a web browser) to provide a user name and password when making a request. In basic HTTP authentication, a request contains a header field in the form of `Authorization: Basic <credentials>`, where credentials is the Base64 encoding of ID and password joined by a single colon :.
-  - > For further information clicks =>[here](https://en.wikipedia.org/wiki/Basic_access_authentication)
-- OWASP auth cheatsheet
-  - **Authentication** is the process of verifying that an individual, entity or website is whom it claims to be. Authentication in the context of web applications is commonly performed by submitting a username or ID and one or more items of private information that only a given user should know.
-  - **Session Management** is a process by which a server maintains the state of an entity interacting with it. This is required for a server to remember how to react to subsequent requests throughout a transaction. Sessions are maintained on the server by a session identifier which can be passed back and forward between the client and server when transmitting and receiving requests.
-  - > For further information clicks =>[here](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
+- JWT
+  - What is JSON Web Token?
+    - JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using RSA or ECDSA.
+  - When should you use JSON Web Tokens?
+    - Authorization
+      - This is the most common scenario for using JWT. Once the user is logged in, each subsequent request will include the JWT, allowing the user to access routes, services, and resources that are permitted with that token. Single Sign On is a feature that widely uses JWT nowadays, because of its small overhead and its ability to be easily used across different domains.
+    - Information Exchange
+      - JSON Web Tokens are a good way of securely transmitting information between parties. Because JWTs can be signed—for example, using public/private key pairs—you can be sure the senders are who they say they are. Additionally, as the signature is calculated using the header and the payload, you can also verify that the content hasn't been tampered with.
+  - What is the JSON Web Token structure?
+    - Header
+    - Payload
+    - Signature
+    - Example of it:
+      - ![example](https://cdn.auth0.com/blog/legacy-app-auth/legacy-app-auth-5.png)
+
+  - > For further information clicks =>[here](https://jwt.io/introduction/)
 
 <br>
 
