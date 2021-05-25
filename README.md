@@ -127,7 +127,7 @@ Implement any 2 of these security measures, or any other measure that you can th
 
   - For the repo ***bearer-auth*** clicks => [here](https://github.com/shadykh/bearer-auth).
   - Pull Requests:
-    - [https://github.com/shadykh/bearer-auth/pull/5](https://github.com/shadykh/bearer-auth/pull/2)
+    - [https://github.com/shadykh/bearer-auth/pull/8](https://github.com/shadykh/bearer-auth/pull/8)
   - Local Tests:
     - ![Local Test Image1](https://raw.githubusercontent.com/shadykh/bearer-auth/main/assets/localTest1.PNG)
     - ![Local Test Image2](https://raw.githubusercontent.com/shadykh/bearer-auth/main/assets/localTest2.PNG)
