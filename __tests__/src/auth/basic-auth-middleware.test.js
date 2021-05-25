@@ -1,5 +1,5 @@
 'use strict';
-const mongoose = require('mongoose');
+
 require('@code-fellows/supergoose');
 const middleware = require('../../../src/auth/middleware/basic.js');
 const Users = require('../../../src/auth/models/users.js');
@@ -61,4 +61,3 @@ describe('Auth Middleware', () => {
   });
 
 });
-afterAll(() => mongoose.disconnect());

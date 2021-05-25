@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-//const SECRET = 'SOME-COMPLEX-RANDOMLLY-GNERATED-KEY';// this should be stored inside your environment variables.
+
 
 const users = new mongoose.Schema({
   username: { type: String, required: true, unique: true },
